@@ -11,6 +11,10 @@ header {
   padding: 20px;
 }
 
+.oculto {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: center;
