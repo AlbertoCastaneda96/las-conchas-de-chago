@@ -1,0 +1,62 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #3398f8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+nav button {
+  padding: 10px;
+  border: none;
+  background: hsl(101, 92%, 34%);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #ff7b00;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 10px;
+}
+
+.item {
+  background: rgb(255, 137, 137);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.whatsapp {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
