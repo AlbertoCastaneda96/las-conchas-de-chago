@@ -2,185 +2,185 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Las Chonchas de Chago</title>
+  <title>Las Conchas de Chago</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
   <img src="logo.png" class="logo">
-  <h1>Las Chonchas de Chago</h1>
+  <h1>Las Conchas de Chago</h1>
   <button onclick="mostrarMenu()" class="btn-menu">📋 Ver Menú</button>
 </header>
 
 <!-- MENÚ PRINCIPAL -->
-<section id="menuPrincipal" class="oculto">
-
-  <button onclick="mostrarSeccion('bebidas')">🥤 Bebidas</button>
-  <button onclick="mostrarSeccion('comida')">🍤 Comida</button>
-
+<section id="menuPrincipal" class="oculto pantalla">
+  <h2>Menú</h2>
+  <button onclick="mostrarSeccion('bebidas')" class="btn">🥤 Bebidas</button>
+  <button onclick="mostrarSeccion('comida')" class="btn">🍤 Comida</button>
 </section>
 
 <!-- BEBIDAS -->
-<section id="bebidas" class="oculto">
-
+<section id="bebidas" class="oculto pantalla">
   <h2>Bebidas</h2>
 
-  <button onclick="mostrarSub('aguas')">Aguas</button>
-   <button onclick="mostrarSub('refresco')">Refresco</button>
-  <button onclick="mostrarSub('cervezas')">Cervezas</button>
-  <button onclick="mostrarSub('caguamas')">Caguamas</button>
-  <button onclick="mostrarSub('micheladas')">Micheladas</button>
-  <button onclick="volverMenu()">⬅️ Volver</button>
+  <button onclick="mostrarSub('aguas')" class="btn">Aguas</button>
+  <button onclick="mostrarSub('refresco')" class="btn">Refresco</button>
+  <button onclick="mostrarSub('cervezas')" class="btn">Cervezas</button>
+  <button onclick="mostrarSub('caguamas')" class="btn">Caguamas</button>
+  <button onclick="mostrarSub('micheladas')" class="btn">Micheladas</button>
+  <button onclick="volverMenu()" class="btn volver">⬅️ Volver</button>
 
-  <div id="aguas" class="sub oculto">
-    <p>Agua de Jamaica - $35</p>
-    <p>Agua de Piña Hierba - $35</p>
-    <p>Agua de Tamarindo - $35</p>
-    <p>Agua de Guayaba Fresa - $35</p>
-    <p>Agua de limon con chia - $35</p>
-    <p>Agua de Guayaba Espinacas - $35</p>
-    <p>Agua Natural - $20</p>
+  <!-- AQUÍ SOLO CAMBIA ESTILO -->
+  <div id="aguas" class="sub oculto card">
+    <p><span>Agua de Jamaica</span><b>$35</b></p>
+    <p><span>Agua de Piña Hierba</span><b>$35</b></p>
+    <p><span>Agua de Tamarindo</span><b>$35</b></p>
+    <p><span>Agua de Guayaba Fresa</span><b>$35</b></p>
+    <p><span>Agua de limon con chia</span><b>$35</b></p>
+    <p><span>Agua de Guayaba Espinacas</span><b>$35</b></p>
+    <p><span>Agua Natural</span><b>$20</b></p>
   </div>
 
-  <div id="refresco" class="sub oculto">
-    <p>Cocacola 355ml - $40</p>
-    <p>Coca Light 355ml - $40</p>
-    <p>Agua Mineral 355ml - $40</p>
-    <p>Manzanita 255ml - $30</p>
-    <p>Sprite 255ml - $30</p>
-    <p>Fresca 255ml - $30</p>
-    <p>Fanta 255ml - $30</p>
+  <div id="refresco" class="sub oculto card">
+    <p><span>Cocacola 355ml</span><b>$40</b></p>
+    <p><span>Coca Light 355ml</span><b>$40</b></p>
+    <p><span>Agua Mineral 355ml</span><b>$40</b></p>
+    <p><span>Manzanita 255ml</span><b>$30</b></p>
+    <p><span>Sprite 255ml</span><b>$30</b></p>
+    <p><span>Fresca 255ml</span><b>$30</b></p>
+    <p><span>Fanta 255ml</span><b>$30</b></p>
   </div>
 
-  <div id="cervezas" class="sub oculto">
-    <p>Piquito de Oro - $40</p>
-    <p>Corona Clara/Obscura 1/4 - $30</p>
-    <p>Pacifico 1/4 - $30</p>
-    <p>Cubeta 10pz - $250</p>
+  <div id="cervezas" class="sub oculto card">
+    <p><span>Piquito de Oro</span><b>$40</b></p>
+    <p><span>Corona Clara/Obscura 1/4</span><b>$30</b></p>
+    <p><span>Pacifico 1/4</span><b>$30</b></p>
+    <p><span>Cubeta 10pz</span><b>$250</b></p>
   </div>
 
-  <div id="caguamas" class="sub oculto">
-    <p>Caguama Mega - $105</p>
-    <p>Caguama Familiar - $85</p>
+  <div id="caguamas" class="sub oculto card">
+    <p><span>Caguama Mega</span><b>$105</b></p>
+    <p><span>Caguama Familiar</span><b>$85</b></p>
   </div>
 
-  <div id="micheladas" class="sub oculto">
-    <p>Michelada Clásica 1Lt - $120</p>
-    <p>Michelada Clásica 1/2Lt - $70</p>
-    <p>Michelada de Camaron 1Lt - $160</p>
-    <p>Michelada de Camaron 1/2Lt - $90</p>
-    <p>Clamato Preparado - $45</p>
-    <p>Rusa 1Lt(Refresco) - $80</p>
-    <p>Rusa 1/2Lt(Refresco)  - $45</p>
-    <p>Limonada 1Lt(mineral) - $80</p>
-    <p>Limonada 1/2Lt(mineral)  - $45</p>
-    <p>Naranjada 1Lt(mineral) - $80</p>
-    <p>Naranjada 1/2Lt(mineral) - $45</p>
+  <div id="micheladas" class="sub oculto card">
+    <p><span>Michelada Clásica 1Lt</span><b>$120</b></p>
+    <p><span>Michelada Clásica 1/2Lt</span><b>$70</b></p>
+    <p><span>Michelada de Camaron 1Lt</span><b>$160</b></p>
+    <p><span>Michelada de Camaron 1/2Lt</span><b>$90</b></p>
+    <p><span>Clamato Preparado</span><b>$45</b></p>
+    <p><span>Rusa 1Lt</span><b>$80</b></p>
+    <p><span>Rusa 1/2Lt</span><b>$45</b></p>
+    <p><span>Limonada 1Lt</span><b>$80</b></p>
+    <p><span>Limonada 1/2Lt</span><b>$45</b></p>
+    <p><span>Naranjada 1Lt</span><b>$80</b></p>
+    <p><span>Naranjada 1/2Lt</span><b>$45</b></p>
   </div>
 
 </section>
 
-<!-- COMIDA -->
-<section id="comida" class="oculto">
-
+<!-- COMIDA (MISMA LÓGICA SOLO ESTILO) -->
+<section id="comida" class="oculto pantalla">
   <h2>Comida</h2>
 
-  <button onclick="mostrarSub('tostadas')">Tostadas</button>
-  <button onclick="mostrarSub('ordenes')">Órdenes</button>
-  <button onclick="mostrarSub('zarandeados')">Zarandeados</button>
-  <button onclick="mostrarSub('infantil')">Menú Infantil</button>
-  <button onclick="mostrarSub('conchas')">Conchas</button>
-  <button onclick="mostrarSub('postres')">Postres</button>
-  <button onclick="mostrarSub('balazos')">Balazos</button>
-  <button onclick="mostrarSub('cocteles')">Cocteles</button>
-  <button onclick="volverMenu()">⬅️ Volver</button>
+  <button onclick="mostrarSub('tostadas')" class="btn">Tostadas</button>
+  <button onclick="mostrarSub('ordenes')" class="btn">Órdenes</button>
+  <button onclick="mostrarSub('zarandeados')" class="btn">Zarandeados</button>
+  <button onclick="mostrarSub('infantil')" class="btn">Menú Infantil</button>
+  <button onclick="mostrarSub('conchas')" class="btn">Conchas</button>
+  <button onclick="mostrarSub('postres')" class="btn">Postres</button>
+  <button onclick="mostrarSub('balazos')" class="btn">Balazos</button>
+  <button onclick="mostrarSub('cocteles')" class="btn">Cocteles</button>
 
-  <div id="tostadas" class="sub oculto">
-    <p>Ceviche de Camaron - $80</p>
-    <p>Ceviche en Trozo - $60</p>
-    <p>Ceviche Molido - $50</p>
-    <p>Viuda - $75</p>
-    <p>Aguachile (Negro, Rojo, Verde, Tatemado, Macha, Cenizas,Cora) - $75</p>
-    <p>Atun - $75</p>
-    <p>Atun Tropical - $110</p>
-    <p>Atun con jengibre - $80</p>
-    <p>Y Otra (Atun y Salmon) - $110</p>
-    <p>La Chata (Salmon) - $115</p>
-    <p>Mi Prieta Chula (Camaron y Pulpo)- $105</p>
-    <p>Tostada de Pulpo- $95</p>
-    <p>Camaron - $80</p>
-    <p>Marlin - $60</p>
-    <p>Callo de Hacha - $110</p>
-    <p>Corita - $100</p>
-  </div>
+  <button onclick="volverMenu()" class="btn volver">⬅️ Volver</button>
 
-  <div id="ordenes" class="sub oculto">
-    <p>Ceviche de Camaron - $210</p>
-    <p>Ceviche de pez en Trozo - $210</p>
-    <p>Ceviche de pez Molido - $200</p>
-    <p>Camaron - $210</p>
-    <p>Pulpo - $230</p>
-    <p>Mixta (Camaron cocido y crudo, Pulpo y Atun) - $270</p>
-    <p>Aguachile (Negro, Rojo, Verde, Tatemado, Macha, Corita y Cenizas) - $210</p>
-    <p>Sashimi de Atun - $200</p>
-    <p>Sashimi de Tilapia - $160</p>
-    <p>Ta Cafe (Camaron Cocido y Crudo, Pulpo, Atun y Callo de Hacha)- $430</p>
-    <p>Coco Preparado - $350</p>
-    <p>Aguachile de Ribeyes - $330</p>
-    <p>Tiradito de Salmon - $230</p>
-    <p>Tosti Aguachile (Negro, Rojo, Verde, Tatemado, Macha, Corita y Cenizas) - $250</p>
-    <p>Chicharron de Camaron - $250</p>
-    <p>Chicharron de Pescado - $220</p>
-  </div>
-
-  <div id="zarandeados" class="sub oculto">
-    <p>Pescado - $400</p>
-    <p>Camaron 1/2kl - $300</p>
-    <p>Camaron 1kl- $570</p>
-    <p>Pulpo - $630</p>
-    <p>12na de Ostion - $190</p>
-    <p>1/2 de Ostion - $100</p>
-    <p>Taco de Marlin - $50</p>
-    <p>Taco de Pulpo - $85</p>
-    <p>Taco de Camaron - $70</p>
-    <p>Taco de Gobernador - $60</p>
-  </div>
-
-  <div id="infantil" class="sub oculto">
-    <p>Nuggets - $70</p>
-    <p>Papas Gajo - $70</p>
-    <p>Papas a la Francesa - $70</p>
-  </div>
-
-  <div id="conchas" class="sub oculto">
-    <p>12na de Ostion - $140</p>
-    <p>12na de Pata - $110</p>
-    <p>1/2 de Ostion - $85</p>
-    <p>1/2 de Pata - $60</p>
-    <p>Almeja Reyna - $120</p>
-    <p>Almeja Chago - $270</p>
-  </div>
-
-  <div id="postres" class="sub oculto">
-    <p>Preguntar por el Postre de Hoy</p>
-  </div>
-
-  <div id="balazos" class="sub oculto">
-    <p>Camaron - $40</p>
-    <p>Ostion - $35</p>
-    <p>Six Mixto - $150</p>
-    <p>Six Camaron - $160</p>
-    <p>Six Ostion - $140</p>
-  </div>
-
-  <div id="cocteles" class="sub oculto">
-    <p>Camaron G - $195</p>
-    <p>Camaron M- $170</p>
-    <p>Pulpo G - $250</p>
-    <p>Pulpo M - $185</p>
-    <p>Camaron y Pulpo G - $240</p>
-    <p>Camaron y Pulpo M - $200</p>
+  <!-- EJEMPLO SOLO, YA TODOS IGUAL -->
+  <div id="tostadas" class="sub oculto card"> 
+    <p>Ceviche de Camaron - $80</p> 
+    <p>Ceviche en Trozo - $60</p> 
+    <p>Ceviche Molido - $50</p> 
+    <p>Viuda - $75</p> 
+    <p>Aguachile (Negro, Rojo, Verde, Tatemado, Macha, Cenizas,Cora) - $75</p> 
+    <p>Atun - $75</p> 
+    <p>Atun Tropical - $110</p> 
+    <p>Atun con jengibre - $80</p> 
+    <p>Y Otra (Atun y Salmon) - $110</p> 
+    <p>La Chata (Salmon) - $115</p> 
+    <p>Mi Prieta Chula (Camaron y Pulpo)- $105</p> 
+    <p>Tostada de Pulpo- $95</p> 
+    <p>Camaron - $80</p> 
+    <p>Marlin - $60</p> 
+    <p>Callo de Hacha - $110</p> 
+    <p>Corita - $100</p> 
+  </div> 
+  
+  <div id="ordenes" class="sub oculto card"> 
+    <p>Ceviche de Camaron - $210</p> 
+    <p>Ceviche de pez en Trozo - $210</p> 
+    <p>Ceviche de pez Molido - $200</p> 
+    <p>Camaron - $210</p> 
+    <p>Pulpo - $230</p> 
+    <p>Mixta (Camaron cocido y crudo, Pulpo y Atun) - $270</p> 
+    <p>Aguachile (Negro, Rojo, Verde, Tatemado, Macha, Corita y Cenizas) - $210</p> 
+    <p>Sashimi de Atun - $200</p> 
+    <p>Sashimi de Tilapia - $160</p> 
+    <p>Ta Cafe (Camaron Cocido y Crudo, Pulpo, Atun y Callo de Hacha)- $430</p> 
+    <p>Coco Preparado - $350</p> 
+    <p>Aguachile de Ribeyes - $330</p> 
+    <p>Tiradito de Salmon - $230</p> 
+    <p>Tosti Aguachile (Negro, Rojo, Verde, Tatemado, Macha, Corita y Cenizas) - $250</p> 
+    <p>Chicharron de Camaron - $250</p> 
+    <p>Chicharron de Pescado - $220</p> 
+  </div> 
+  
+  <div id="zarandeados" class="sub oculto card"> 
+    <p>Pescado - $400</p> 
+    <p>Camaron 1/2kl - $300</p> 
+    <p>Camaron 1kl- $570</p> 
+    <p>Pulpo - $630</p> 
+    <p>12na de Ostion - $190</p> 
+    <p>1/2 de Ostion - $100</p> 
+    <p>Taco de Marlin - $50</p> 
+    <p>Taco de Pulpo - $85</p> 
+    <p>Taco de Camaron - $70</p> 
+    <p>Taco de Gobernador - $60</p> 
+  </div> 
+  
+  <div id="infantil" class="sub oculto card"> 
+    <p>Nuggets - $70</p> 
+    <p>Papas Gajo - $70</p> 
+    <p>Papas a la Francesa - $70</p> 
+  </div> 
+  
+  <div id="conchas" class="sub oculto card"> 
+    <p>12na de Ostion - $140</p> 
+    <p>12na de Pata - $110</p> 
+    <p>1/2 de Ostion - $85</p> 
+    <p>1/2 de Pata - $60</p> 
+    <p>Almeja Reyna - $120</p> 
+    <p>Almeja Chago - $270</p> 
+  </div> 
+  
+  <div id="postres" class="sub oculto card"> 
+    <p>Preguntar por el Postre de Hoy</p> 
+  </div> 
+  
+  <div id="balazos" class="sub oculto card"> 
+    <p>Camaron - $40</p> 
+    <p>Ostion - $35</p> 
+    <p>Six Mixto - $150</p> 
+    <p>Six Camaron - $160</p> 
+    <p>Six Ostion - $140</p> 
+  </div> 
+  
+  <div id="cocteles" class="sub oculto card"> 
+    <p>Camaron G - $195</p> 
+    <p>Camaron M- $170</p> 
+    <p>Pulpo G - $250</p> 
+    <p>Pulpo M - $185</p> 
+    <p>Camaron y Pulpo G - $240</p> 
+    <p>Camaron y Pulpo M - $200</p> 
   </div>
 
 </section>

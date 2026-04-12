@@ -1,12 +1,48 @@
 body {
-  font-family: Arial;
   margin: 0;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
 }
 
+/* HEADER */
 header {
-  background: #3398f8;
+  background: linear-gradient(135deg, #0a2540, #00b4d8);
   color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 310px;
+  border-radius: 50%;
+}
+
+/* BOTONES */
+.btn, .btn-menu {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #00b4d8;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0077b6;
+  transform: scale(1.05);
+}
+
+.volver {
+  background: #6c757d;
+}
+
+/* SECCIONES */
+.pantalla {
   text-align: center;
   padding: 20px;
 }
@@ -15,52 +51,50 @@ header {
   display: none;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 10px;
+.pantalla {
+  background: linear-gradient(135deg, #0a2540, #00b4d8);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+  animation: fade 0.4s;
 }
 
-nav button {
-  padding: 10px;
-  border: none;
-  background: hsl(101, 92%, 34%);
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button {
-  transition: 0.3s;
-}
-
-button:hover {
-  transform: scale(1.05);
-  background: #ff7b00;
-}
-
-#menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  padding: 10px;
-}
-
-.item {
-  background: rgb(255, 137, 137);
-  margin: 10px;
+/* TARJETAS */
+.card {
+  background: white;
+  border-radius: 15px;
   padding: 15px;
-  border-radius: 10px;
-  text-align: center;
+  margin: 15px auto;
+  width: 85%;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  animation: fade 0.4s;
 }
 
-.whatsapp {
-  display: block;
-  text-align: center;
-  margin: 20px;
+/* TEXTO MENU */
+.card p {
+    background: white;
+  border-radius: 15px;
   padding: 15px;
-  background: green;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
+  margin: 15px auto;
+  width: 85%;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  animation: fade 0.4s;
+}
+
+.card b {
+  color: #00b4d8;
+}
+
+/* TITULOS */
+h2 {
+  color: #0077b6;
+}
+
+/* ANIMACIÓN */
+@keyframes fade {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1;}
 }
